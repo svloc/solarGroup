@@ -1,0 +1,13 @@
+ <nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li class="home"><a href='/'>Home</a></li>
+    <li class="login" *ngIf="!isLoggedIn"><a class='dropdown-arrow'>Login</a>
+      <ul class='sub-menus'>
+        <li><a routerLink='/login'>Admin</a></li>
+        <li><a routerLink='/login'>User</a></li>
+      </ul>
+    </li>
+    <li *ngIf="isLoggedIn" class="login"><a routerLink='' (click)="onLogout()">Logout</a></li>
+  </ul>
+</nav> 

@@ -1,0 +1,57 @@
+.login-wrapper{
+    background-color: #071c2f;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+  .form-login{
+    width: 100%;
+  max-width: 430px;
+  padding: 50px;
+  top: 28%;
+  left: 38%;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  background-color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .form-login{
+    width: 100%;
+    max-width: 320px;
+    padding: 32px;
+    top: 28%;
+    left: 0%;
+    margin: auto 20px;
+    position: absolute;
+    font-size: 12px;
+}
+}
+    .input-group-text{
+        border-right: none;
+        background-color: transparent;
+        border: 0;
+    }
+    button{
+        font-size: 13px;
+    }
+    input{
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    .input-group-prepend{
+      display: flex;
+        position: absolute;
+        z-index: 100;
+        top: 4px;
+    }
+
+    .form-check-input {
+        margin-top: 0.19rem;
+    }
+
+
+
+
+
+

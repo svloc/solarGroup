@@ -1,0 +1,12 @@
+<div id="header">
+  <h1 id="main-title">This is User List Only Admin Have Access</h1>
+</div>
+<div id="content" *ngFor="let item of data">
+  <blockquote>
+    <h6>Id : {{ item.id }}</h6>
+    <h6>Name : {{ item.name }}</h6>
+    <h6>Email : {{ item.email }}</h6>
+    <h6>Gender : {{ item.gender }}</h6>
+    <h6>Status: {{ item.status }}</h6>
+  </blockquote>
+</div>

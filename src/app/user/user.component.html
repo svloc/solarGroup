@@ -1,0 +1,10 @@
+<div id="header">
+  <h1 id="main-title">This is Aticles For Users</h1>
+</div>
+<div id="content" *ngFor="let item of data">
+  <blockquote>
+    <h6>id : {{ item.id }}</h6>
+    <h6>title : {{ item.title }}</h6>
+    <p>{{ item.body }}</p>
+  </blockquote>
+</div>

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+#header {
+  background-position: center center;
+  height: 20pt;
+  max-height: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+#header h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 55px;
+  color: #fff;
+  margin-top: 5pt;
+  max-width: 170pt;
+}
+#header h3 {
+  margin: 0;
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3pt;
+}
+
+#content {
+  width: calc(60% - 40pt);
+  max-width: 400pt;
+  margin-left: 40%;
+  margin-bottom: 15pt;
+}
+#content hr {
+  border: 8pt solid #fff;
+  margin-top: 30pt;
+  margin-bottom: 15pt;
+}
+#content p {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+#content blockquote {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(36, 36, 36);
+  color: #fff;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 20pt;
+  padding-left: 20pt;
+  padding-right: 20pt;
+  padding-bottom: 20pt;
+}
