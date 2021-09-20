@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject, AfterViewInit } from "@angular/core";
-import { Observable } from "rxjs";
 import { loginAuthService } from '../../services/loginAuth.service';
 @Component({
   selector: "app-header",
@@ -15,6 +14,7 @@ export class HeaderComponent implements OnInit {
  
     onLogout(){
       this.authService.logout();
+
       alert("logout successfully");
     }
     get isLoggedIn(): boolean {

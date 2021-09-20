@@ -10,7 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { UserModule } from './user/user.module';
 import { AuthService } from './services/auth.service';
+
 import { loginAuthService } from './services/loginAuth.service';
+
+
 
 @NgModule({
   declarations: [
@@ -23,11 +26,11 @@ import { loginAuthService } from './services/loginAuth.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     UserModule,
+
   ],
   providers: [   AuthService,loginAuthService
     ],

@@ -9,7 +9,8 @@ export class AuthService implements CanActivate {
 
   constructor(private _router:Router) { }
   canActivate():boolean {
-    if(localStorage.getItem("user_name")!=null)
+    var token =localStorage.getItem("user_name");
+    if(localStorage.getItem("user_name")!=null && localStorage.getItem("user_name")==='admin')
     {
       return true;
     }

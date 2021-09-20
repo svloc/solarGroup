@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import { FormGroup, FormBuilder, NgForm, Validators } from "@angular/forms";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { loginAuthService } from "src/app/services/loginAuth.service";
+
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
@@ -46,6 +47,7 @@ export class LoginComponent implements OnInit {
     this.password = signInForm.controls.pass.value;
     if (this.userId === "user" && this.password === "password") {
       this.authService.login(this.userId, this.password);
+
       this.router.navigate(["/user"]);
     } else if (this.userId === "admin" && this.password === "password") {
       this.authService.login(this.userId, this.password);
